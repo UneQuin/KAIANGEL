@@ -34,3 +34,61 @@ main {
 section {
     margin-bottom: 20px;
 }
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.button {
+    display: inline-block; /* Чтобы кнопка выглядела блочно */
+    padding: 10px 20px; /* Внутренние отступы */
+    font-size: 16px; /* Размер текста */
+    color: #ffffff; /* Цвет текста */
+    background-color: #007BFF; /* Синий фон */
+    border: none; /* Без границ */
+    border-radius: 25px; /* Закругленные края */
+    cursor: pointer; /* Указатель курсора */
+    transition: background-color 0.3s, transform 0.2s; /* Плавные переходы */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Более темный цвет при наведении */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+}
+
+.button:active {
+    background-color: #003f7f; /* Ещё темнее при нажатии */
+    transform: scale(0.95); /* Уменьшение при нажатии */
+}
+/* Стили для контейнера навигации */
+.navbar {
+    background-color: #333; /* Тёмно-серый фон */
+    overflow: hidden; /* Убираем переполнение */
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: center; /* Центрируем кнопки */
+    padding: 10px 0; /* Добавляем отступы сверху и снизу */
+}
+
+/* Стили для ссылок внутри навигации */
+.navbar a {
+    color: white; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 14px 20px; /* Внутренние отступы для кнопок */
+    text-align: center; /* Выравниваем текст */
+    border-radius: 5px; /* Закругленные углы */
+    font-size: 16px; /* Размер текста */
+    transition: background-color 0.3s, transform 0.2s; /* Плавные эффекты */
+}
+
+/* Эффект при наведении */
+.navbar a:hover {
+    background-color: #575757; /* Светло-серый цвет при наведении */
+    transform: scale(1.1); /* Увеличение кнопки */
+}
+
+/* Активная ссылка */
+.navbar a.active {
+    background-color: #007BFF; /* Синий фон для активной страницы */
+    color: white; /* Белый текст */
+    font-weight: bold; /* Жирный текст */
+}
